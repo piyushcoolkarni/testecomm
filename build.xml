@@ -58,7 +58,7 @@
   </exec>
  </target>
 
-<!--
+
  <target name="pdepend" description="Calculate software metrics using PHP_Depend">
   <exec executable="${basedir}/build/tools/pdepend.phar">
    <arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml"/>
@@ -67,7 +67,7 @@
    <arg path="${basedir}/ecomm_project"/>
   </exec>
  </target>
--->
+
 
 
  <target name="phpmd" description="Perform project mess detection using PHPMD and print result in text format">
