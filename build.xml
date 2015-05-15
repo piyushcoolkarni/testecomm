@@ -59,7 +59,7 @@
  </target>
 
 <target name="csslint" description="Run the CSSLint tool on CSS files">
-   <fileset dir="${basedir}/src" id="cssfiles.raw">
+   <fileset dir="${basedir}/ecomm_project" id="cssfiles.raw">
      <include name="**/*.css" />
    </fileset>
    <pathconvert pathsep=" " property="cssfiles.clean" refid="cssfiles.raw" />
@@ -69,7 +69,7 @@
 </target>
 
 <target name="jslint" description="Run the JSLint tool on JavaScript files">
- <fileset dir="${basedir}/src" id="jsfiles.raw">
+ <fileset dir="${basedir}/ecomm_project" id="jsfiles.raw">
    <include name="**/*.js" />
  </fileset>
  <pathconvert pathsep=" " property="jsfiles.clean" refid="jsfiles.raw" />
