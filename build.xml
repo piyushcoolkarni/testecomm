@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Ecomm" default="build" basedir=".">
- <target name="build" depends="prepare,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit,phpdox,zip"/>
+ <target name="build" depends="prepare,phploc,csslint,jslint,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit,phpdox,zip"/>
 
 <target name="clean" description="Cleanup build artifacts">
   <delete dir="${basedir}/build/api"/>
@@ -57,6 +57,26 @@
    <arg path="${basedir}/tests"/>
   </exec>
  </target>
+
+<target name="csslint" description="Run the CSSLint tool on CSS files">
+   <fileset dir="${basedir}/src" id="cssfiles.raw">
+     <include name="**/*.css" />
+   </fileset>
+   <pathconvert pathsep=" " property="cssfiles.clean" refid="cssfiles.raw" />
+   <exec executable="csslint" output="build/logs/csslint.xml">
+     <arg line="--warnings=box-model,floats --errors=ids,important --format=lint-xml ${cssfiles.clean}" />
+   </exec>
+</target>
+
+<target name="jslint" description="Run the JSLint tool on JavaScript files">
+ <fileset dir="${basedir}/src" id="jsfiles.raw">
+   <include name="**/*.js" />
+ </fileset>
+ <pathconvert pathsep=" " property="jsfiles.clean" refid="jsfiles.raw" />
+ <exec executable="jslint" output="build/logs/jslint.xml">
+   <arg line="--reporter=jslint ${jsfiles.clean}" />
+ </exec>
+</target>
 
 
  <target name="pdepend" description="Calculate software metrics using PHP_Depend">
