@@ -6,7 +6,7 @@
 */
 class Config
  {
-    const HOST     = '172.27.59.54',
+    const HOST     = '127.0.0.1',
           USER     = 'ecomm',
           PASSWORD = 'ecomm@123',
 		
