@@ -29,6 +29,8 @@
   </exec>
  </target>
 
+ 
+<!--comment lint for this ant script>
 <!--
  <target name="lint">
   <apply executable="php" failonerror="true">
