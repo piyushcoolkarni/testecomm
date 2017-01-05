@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="../ecomm_project" file="AboutusCustIncluded.php" realpath="/home/piyush/Desktop/ecomm/ecomm_project/AboutusCustIncluded.php" size="112" time="2016-12-22T15:58:47+05:30" unixtime="1482402527" sha1="bf7fb4697759fc1e7959db8f7049bc65bdd8e7e6" relative="AboutusCustIncluded.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_INCLUDE_ONCE">include_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"HeaderHtml.php"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_INCLUDE_ONCE">include_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"html/AboutUsCust.html"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_INCLUDE_ONCE">include_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"html/FooterHtml.html"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="5"/>
+</source>
